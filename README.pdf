@@ -1,0 +1,645 @@
+%PDF-1.3
+1 0 obj
+<< /Type /Catalog
+/Outlines 2 0 R
+/Pages 3 0 R >>
+endobj
+2 0 obj
+<< /Type /Outlines /Count 0 >>
+endobj
+3 0 obj
+<< /Type /Pages
+/Kids [6 0 R
+14 0 R
+33 0 R
+35 0 R
+37 0 R
+]
+/Count 5
+/Resources <<
+/ProcSet 4 0 R
+/Font << 
+/F1 8 0 R
+/F2 9 0 R
+/F3 16 0 R
+>>
+>>
+/MediaBox [0.000 0.000 595.280 841.890]
+ >>
+endobj
+4 0 obj
+[/PDF /Text ]
+endobj
+5 0 obj
+<<
+/Creator (DOMPDF)
+/CreationDate (D:20211215080715+00'00')
+/ModDate (D:20211215080715+00'00')
+>>
+endobj
+6 0 obj
+<< /Type /Page
+/Parent 3 0 R
+/Annots [ 10 0 R 12 0 R ]
+/Contents 7 0 R
+>>
+endobj
+7 0 obj
+<<
+/Length 6135 >>
+stream
+
+0.000 0.000 0.000 rg
+BT 34.016 768.985 Td /F1 24.0 Tf  [(Simulation of Pool Testing to Identify Patients )] TJ ET
+BT 34.016 740.473 Td /F1 24.0 Tf  [(With Coronavirus Disease 2019 Under Conditions )] TJ ET
+BT 34.016 711.961 Td /F1 24.0 Tf  [(of Limited Test Availability)] TJ ET
+BT 34.016 676.835 Td /F1 14.0 Tf  [(Shiny App Website ###)] TJ ET
+0.000 0.000 0.800 rg
+BT 34.016 648.054 Td /F2 12.0 Tf  [(https://abrahamliu7.shinyapps.io/COVID_19_Simulation_Model/)] TJ ET
+0.000 0.000 0.800 RG
+0.6 w 0 J [  ] 0 d
+34.016 645.354 m 349.364 645.354 l S
+0.000 0.000 0.000 rg
+BT 34.016 617.819 Td /F1 14.0 Tf  [(Introduction)] TJ ET
+BT 34.016 589.038 Td /F2 12.0 Tf  [(The novel coronavirus disease \(COVID-19\), resulting from the serious acute respiratory syndrome \(SARS-)] TJ ET
+BT 34.016 574.782 Td /F2 12.0 Tf  [(CoV-2\) virus is a highly contagious respiratory disease, first originating in the United States in January )] TJ ET
+BT 34.016 560.526 Td /F2 12.0 Tf  [(2020. With the widespread of COVID-19 pandemic, efforts have been made for efficient testing measures. )] TJ ET
+BT 34.016 546.270 Td /F2 12.0 Tf  [(The patients who are suspected to have COVID-19 go through a real-time reverse transcriptase–polymerase )] TJ ET
+BT 34.016 532.014 Td /F2 12.0 Tf  [(chain reaction - RT-PCR testing. \(Source: )] TJ ET
+0.000 0.000 0.800 rg
+BT 34.016 517.758 Td /F2 12.0 Tf  [(https://jamanetwork.com/journals/jamanetworkopen/fullarticle/2767513?resultClick=3)] TJ ET
+0.6 w 0 J [  ] 0 d
+34.016 515.058 m 451.088 515.058 l S
+0.000 0.000 0.000 rg
+BT 451.088 517.758 Td /F2 12.0 Tf  [(\). The aim of RT-)] TJ ET
+BT 34.016 503.502 Td /F2 12.0 Tf  [(PCR is to check for RNA detection of SARS-CoV-2. The increased request for the SARS-CoV-2 RT-PCR )] TJ ET
+BT 34.016 489.246 Td /F2 12.0 Tf  [(tests has led to a decreased supply of testing reagents. Hence, researchers are examining pooled testing )] TJ ET
+BT 34.016 474.990 Td /F2 12.0 Tf  [(measures from multiple patients. With the pooled testing, if the COVID-19 tests results are negative, then it )] TJ ET
+BT 34.016 460.734 Td /F2 12.0 Tf  [(can be concluded that all sampled individuals do not have COVID-19. However, if the pooled test results are )] TJ ET
+BT 34.016 446.478 Td /F2 12.0 Tf  [(positive, then the sample from every individual is seperately examined/tested. Pooled testing works best )] TJ ET
+BT 34.016 432.222 Td /F2 12.0 Tf  [(under limited testing conditions. However, if we examine sensitivity of the test \(a measure which reflects )] TJ ET
+BT 34.016 417.966 Td /F2 12.0 Tf  [(patients with true positive tests\), and observe a sensitivity under 100%, this results in the likelihood of false )] TJ ET
+BT 34.016 403.710 Td /F2 12.0 Tf  [(negatives. Therefore, it is important to examine a false negative risk by looking at three different criteria: the )] TJ ET
+BT 34.016 389.454 Td /F2 12.0 Tf  [(prevalence of COVID-19, the sensitivity of the COVID-19 tests, and the pool size of the patient.)] TJ ET
+BT 34.016 359.220 Td /F1 14.0 Tf  [(COVID-19 Pooled Testing Analysis)] TJ ET
+BT 34.016 330.439 Td /F2 12.0 Tf  [(In the original model for pooled testing \(Source: The JAMA Network\), every individual in a group will mix )] TJ ET
+BT 34.016 316.183 Td /F2 12.0 Tf  [(their blood in one sample. In order to stimulate this, we assume that the status of positive and negative )] TJ ET
+BT 34.016 301.927 Td /F2 12.0 Tf  [(results are indeed true positives. Thus, we label negative results as 1, and positive results as 0. The product )] TJ ET
+BT 34.016 287.671 Td /F2 12.0 Tf  [(of all values will be the mixed blood result. If the mixed blood result contains solely negative samples, this )] TJ ET
+BT 34.016 273.415 Td /F2 12.0 Tf  [(will result in 1 \(based on prior notation\). Otherwise, the result will be 0.)] TJ ET
+BT 34.016 245.119 Td /F2 12.0 Tf  [(Our shiny app for COVID-19 Pooled Testing provides users with a platform to implement pooled testing )] TJ ET
+BT 34.016 230.863 Td /F2 12.0 Tf  [(strategies from patients with suspected COVID-19 disease. The app stimulates running pooled tests. The )] TJ ET
+BT 34.016 216.607 Td /F2 12.0 Tf  [(number of positive and negative cases are gathered to create a population, as the user will be able to sample )] TJ ET
+BT 34.016 202.351 Td /F2 12.0 Tf  [(a random group sample size n. In addition, the user will specify the sensitivity \(true positive rate\) and )] TJ ET
+BT 34.016 188.095 Td /F2 12.0 Tf  [(specificity \(true negative rate\) levels for any state of their choice. Based on the values the user specifies, the )] TJ ET
+BT 34.016 173.839 Td /F2 12.0 Tf  [(population will be sampled without replacement and tested for either true negative or true positive pooled )] TJ ET
+BT 34.016 159.583 Td /F2 12.0 Tf  [(results. The stimulated model will return either a positive or negative result, which will determine the )] TJ ET
+BT 34.016 145.327 Td /F2 12.0 Tf  [(number of tests that need to be run.)] TJ ET
+BT 34.016 115.092 Td /F1 14.0 Tf  [(Datasets)] TJ ET
+BT 34.016 86.311 Td /F2 12.0 Tf  [(We have used Kaggle to get our datasets for )] TJ ET
+BT 248.960 86.311 Td /F2 12.0 Tf  [(")] TJ ET
+BT 253.856 86.311 Td /F2 12.0 Tf  [(COVID-19 in USA.)] TJ ET
+BT 350.180 86.311 Td /F2 12.0 Tf  [(")] TJ ET
+BT 355.076 86.311 Td /F2 12.0 Tf  [( These datasets are originally adapted )] TJ ET
+BT 34.016 72.055 Td /F2 12.0 Tf  [(from the )] TJ ET
+BT 78.008 72.055 Td /F2 12.0 Tf  [(")] TJ ET
+BT 82.904 72.055 Td /F2 12.0 Tf  [(New York Times)] TJ ET
+BT 166.220 72.055 Td /F2 12.0 Tf  [(")] TJ ET
+BT 171.116 72.055 Td /F2 12.0 Tf  [( and the )] TJ ET
+BT 212.108 72.055 Td /F2 12.0 Tf  [(")] TJ ET
+BT 217.004 72.055 Td /F2 12.0 Tf  [(COVID-19 Tracking Project.)] TJ ET
+BT 357.308 72.055 Td /F2 12.0 Tf  [(")] TJ ET
+BT 362.204 72.055 Td /F2 12.0 Tf  [( The information about COVID-19 and )] TJ ET
+BT 34.016 57.799 Td /F2 12.0 Tf  [(simulation with pooled testing is adapted from the )] TJ ET
+BT 278.012 57.799 Td /F2 12.0 Tf  [(")] TJ ET
+BT 282.908 57.799 Td /F2 12.0 Tf  [(JAMA Network.)] TJ ET
+BT 363.560 57.799 Td /F2 12.0 Tf  [(")] TJ ET
+BT 368.456 57.799 Td /F2 12.0 Tf  [( The website links are also included )] TJ ET
+endstream
+endobj
+8 0 obj
+<< /Type /Font
+/Subtype /Type1
+/Name /F1
+/BaseFont /Times-Bold
+/Encoding /WinAnsiEncoding
+>>
+endobj
+9 0 obj
+<< /Type /Font
+/Subtype /Type1
+/Name /F2
+/BaseFont /Times-Roman
+/Encoding /WinAnsiEncoding
+>>
+endobj
+10 0 obj
+<< /Type /Annot
+/Subtype /Link
+/A 11 0 R
+/Border [0 0 0]
+/H /I
+/Rect [ 34.0157 646.9739 349.3637 658.8539 ]
+>>
+endobj
+11 0 obj
+<< /Type /Action
+/S /URI
+/URI (https://abrahamliu7.shinyapps.io/COVID_19_Simulation_Model/)
+>>
+endobj
+12 0 obj
+<< /Type /Annot
+/Subtype /Link
+/A 13 0 R
+/Border [0 0 0]
+/H /I
+/Rect [ 34.0157 516.6784 451.0877 528.5584 ]
+>>
+endobj
+13 0 obj
+<< /Type /Action
+/S /URI
+/URI (https://jamanetwork.com/journals/jamanetworkopen/fullarticle/2767513?resultClick=3)
+>>
+endobj
+14 0 obj
+<< /Type /Page
+/Parent 3 0 R
+/Annots [ 17 0 R 19 0 R 21 0 R 23 0 R 25 0 R 27 0 R 29 0 R 31 0 R ]
+/Contents 15 0 R
+>>
+endobj
+15 0 obj
+<<
+/Length 6778 >>
+stream
+
+0.000 0.000 0.000 rg
+0.000 0.000 0.800 RG
+0.6 w 0 J [  ] 0 d
+BT 34.016 796.469 Td /F2 12.0 Tf  [(below.)] TJ ET
+BT 34.016 768.173 Td /F2 12.0 Tf  [(Website Sources: - )] TJ ET
+0.000 0.000 0.800 rg
+BT 127.664 768.173 Td /F2 12.0 Tf  [(https://jamanetwork.com/journals/jamanetworkopen/fullarticle/2767513?resultClick=3)] TJ ET
+0.6 w 0 J [  ] 0 d
+127.664 765.473 m 544.736 765.473 l S
+0.000 0.000 0.000 rg
+BT 544.736 768.173 Td /F2 12.0 Tf  [( - )] TJ ET
+0.000 0.000 0.800 rg
+BT 34.016 753.917 Td /F2 12.0 Tf  [(https://www.kaggle.com/sudalairajkumar/covid19-in-usa?select=us_states_covid19_daily.csv)] TJ ET
+0.6 w 0 J [  ] 0 d
+34.016 751.217 m 484.400 751.217 l S
+0.000 0.000 0.000 rg
+BT 34.016 725.621 Td /F2 12.0 Tf  [(Corresponding csv File Used for COVID-19 Data: - us_states_covid19_daily.csv)] TJ ET
+BT 34.016 697.325 Td /F2 12.0 Tf  [(We have also used the first 99 words of the Bee Movie script as a fun little joke while the shiny app )] TJ ET
+BT 34.016 683.069 Td /F2 12.0 Tf  [(simulates the data \(since the calculations will take a while if the population size is large\). The source code of )] TJ ET
+BT 34.016 668.813 Td /F2 12.0 Tf  [(the script is found here: )] TJ ET
+0.000 0.000 0.800 rg
+BT 150.332 668.813 Td /F2 12.0 Tf  [(https://gist.github.com/ElliotGluck/64b0b814293c09999f765e265aaa2ba1)] TJ ET
+0.6 w 0 J [  ] 0 d
+150.332 666.113 m 506.996 666.113 l S
+0.000 0.000 0.000 rg
+BT 34.016 640.517 Td /F2 12.0 Tf  [(Corresponding txt file used for the Bee Movie Script: - progresscheck.txt)] TJ ET
+BT 34.016 610.283 Td /F1 14.0 Tf  [(Data Generating Process)] TJ ET
+BT 34.016 581.502 Td /F2 12.0 Tf  [(Our dataset comes from Kaggle \()] TJ ET
+0.000 0.000 0.800 rg
+BT 193.640 581.502 Td /F2 12.0 Tf  [(https://www.kaggle.com/sudalairajkumar/covid19-in-)] TJ ET
+0.6 w 0 J [  ] 0 d
+193.640 578.802 m 451.616 578.802 l S
+BT 34.016 567.246 Td /F2 12.0 Tf  [(usa?select=us_states_covid19_daily.csv)] TJ ET
+0.6 w 0 J [  ] 0 d
+34.016 564.546 m 226.424 564.546 l S
+0.000 0.000 0.000 rg
+BT 226.424 567.246 Td /F2 12.0 Tf  [(\), which includes data about COVID-19 in all fifty US States. From )] TJ ET
+BT 34.016 552.990 Td /F2 12.0 Tf  [(Kaggle, we have downloaded the csv file )] TJ ET
+BT 234.632 552.990 Td /F2 12.0 Tf  [(")] TJ ET
+BT 239.528 552.990 Td /F2 12.0 Tf  [(us_states_covid19_daily.csv,)] TJ ET
+BT 379.520 552.990 Td /F2 12.0 Tf  [(")] TJ ET
+BT 384.416 552.990 Td /F2 12.0 Tf  [( containing daily-level data about )] TJ ET
+BT 34.016 538.734 Td /F2 12.0 Tf  [(coronavirus tests in the United States \(i.e. following month/date/year format for data collection\). The data )] TJ ET
+BT 34.016 524.478 Td /F2 12.0 Tf  [(generation and cleansing process is performed prior to running the Shiny App.)] TJ ET
+BT 34.016 494.243 Td /F1 14.0 Tf  [(Data Origination and Legality)] TJ ET
+BT 34.016 465.462 Td /F2 12.0 Tf  [(Kaggle \()] TJ ET
+0.000 0.000 0.800 rg
+BT 75.668 465.462 Td /F2 12.0 Tf  [(https://www.kaggle.com/)] TJ ET
+0.6 w 0 J [  ] 0 d
+75.668 462.762 m 197.000 462.762 l S
+0.000 0.000 0.000 rg
+BT 197.000 465.462 Td /F2 12.0 Tf  [(\) provides users with an array of data for projects and analysis. The )] TJ ET
+BT 34.016 451.206 Td /F2 12.0 Tf  [(website for our Shiny App, \()] TJ ET
+0.000 0.000 0.800 rg
+BT 171.332 451.206 Td /F2 12.0 Tf  [(https://www.kaggle.com/sudalairajkumar/covid19-in-)] TJ ET
+0.6 w 0 J [  ] 0 d
+171.332 448.506 m 429.308 448.506 l S
+BT 34.016 436.950 Td /F2 12.0 Tf  [(usa?select=us_states_covid19_daily.csv)] TJ ET
+0.6 w 0 J [  ] 0 d
+34.016 434.250 m 226.424 434.250 l S
+0.000 0.000 0.000 rg
+BT 226.424 436.950 Td /F2 12.0 Tf  [(\), provides COVID-19 data accessible to the public, with appropriate )] TJ ET
+BT 34.016 422.694 Td /F2 12.0 Tf  [(sources credited \()] TJ ET
+BT 118.652 422.694 Td /F2 12.0 Tf  [(")] TJ ET
+BT 123.548 422.694 Td /F2 12.0 Tf  [(COVID-19 Tracking Project)] TJ ET
+BT 260.852 422.694 Td /F2 12.0 Tf  [(")] TJ ET
+BT 265.748 422.694 Td /F2 12.0 Tf  [( and )] TJ ET
+BT 289.076 422.694 Td /F2 12.0 Tf  [(")] TJ ET
+BT 293.972 422.694 Td /F2 12.0 Tf  [(New York Times)] TJ ET
+BT 377.288 422.694 Td /F2 12.0 Tf  [(")] TJ ET
+BT 382.184 422.694 Td /F2 12.0 Tf  [(\). The data generated follows )] TJ ET
+BT 34.016 408.438 Td /F2 12.0 Tf  [(appropriate terms of use.)] TJ ET
+BT 34.016 378.204 Td /F1 14.0 Tf  [(Packages)] TJ ET
+BT 34.016 349.423 Td /F2 12.0 Tf  [(Require the following libraries: )] TJ ET
+BT 188.000 349.423 Td /F3 12.0 Tf  [(shiny)] TJ ET
+BT 224.000 349.423 Td /F2 12.0 Tf  [(, and )] TJ ET
+BT 250.328 349.423 Td /F3 12.0 Tf  [(shinythemes)] TJ ET
+BT 329.528 349.423 Td /F2 12.0 Tf  [( for generating interactive dashboards; )] TJ ET
+BT 34.016 335.167 Td /F3 12.0 Tf  [(tidyverse)] TJ ET
+BT 98.816 335.167 Td /F2 12.0 Tf  [( for cleaning data and manipulating datasets; )] TJ ET
+BT 316.448 335.167 Td /F3 12.0 Tf  [(plotly)] TJ ET
+BT 359.648 335.167 Td /F2 12.0 Tf  [( for creating interactive visuals, )] TJ ET
+BT 34.016 320.911 Td /F3 12.0 Tf  [(lubridate)] TJ ET
+BT 98.816 320.911 Td /F2 12.0 Tf  [( for dates manipulation, and )] TJ ET
+BT 236.132 320.911 Td /F3 12.0 Tf  [(docstring)] TJ ET
+BT 300.932 320.911 Td /F2 12.0 Tf  [( for documentation)] TJ ET
+BT 34.016 290.676 Td /F1 14.0 Tf  [(In-App)] TJ ET
+BT 34.016 259.957 Td /F1 14.0 Tf  [(Functions)] TJ ET
+BT 34.016 232.620 Td /F3 12.0 Tf  [(server\(input, output\))] TJ ET
+BT 34.016 204.686 Td /F2 12.0 Tf  [(Defines the server logic ```r population <- function\(df = df, state = state, date = date, prev = 0.01, pop = )] TJ ET
+BT 34.016 190.430 Td /F2 12.0 Tf  [(10000\) { #' Returns vector of 1's and 0's to simulate a population for COVID-19 Status #' @param df )] TJ ET
+BT 34.016 176.174 Td /F2 12.0 Tf  [(dataframe, default dataframe with unspecified dimensions #' @param state character, default length 1 )] TJ ET
+BT 34.016 161.918 Td /F2 12.0 Tf  [(character type #' @param date numeric, default length 1 numeric type #' @param prev numeric, default )] TJ ET
+BT 34.016 147.662 Td /F2 12.0 Tf  [(length 1 numeric type #' @param pop numeric, default length 1 numeric type #' @return the population )] TJ ET
+BT 34.016 133.406 Td /F2 12.0 Tf  [(vector with length of size population)] TJ ET
+BT 34.016 106.554 Td /F3 12.0 Tf  [(  # if user decided to use the COVID-19 Dataset)] TJ ET
+BT 34.016 94.104 Td /F3 12.0 Tf  [(  if \(input$rd == 1\) {)] TJ ET
+BT 34.016 81.654 Td /F3 12.0 Tf  [(    positives <- df$positive[df$date == date & df$state == state] #grab number of positive cases)] TJ ET
+BT 34.016 69.203 Td /F3 12.0 Tf  [(    negatives <- df$negative[df$date == date & df$state == state] #grab number of negative cases)] TJ ET
+BT 34.016 56.753 Td /F3 12.0 Tf  [(  })] TJ ET
+BT 34.016 44.303 Td /F3 12.0 Tf  [(  #if user decided to simulate with using a prevalence parameter)] TJ ET
+BT 34.016 31.853 Td /F3 12.0 Tf  [(  else {)] TJ ET
+endstream
+endobj
+16 0 obj
+<< /Type /Font
+/Subtype /Type1
+/Name /F3
+/BaseFont /Courier
+/Encoding /WinAnsiEncoding
+>>
+endobj
+17 0 obj
+<< /Type /Annot
+/Subtype /Link
+/A 18 0 R
+/Border [0 0 0]
+/H /I
+/Rect [ 127.6637 767.0935 544.7357 778.9735 ]
+>>
+endobj
+18 0 obj
+<< /Type /Action
+/S /URI
+/URI (https://jamanetwork.com/journals/jamanetworkopen/fullarticle/2767513?resultClick=3)
+>>
+endobj
+19 0 obj
+<< /Type /Annot
+/Subtype /Link
+/A 20 0 R
+/Border [0 0 0]
+/H /I
+/Rect [ 34.0157 752.8375 484.3997 764.7175 ]
+>>
+endobj
+20 0 obj
+<< /Type /Action
+/S /URI
+/URI (https://www.kaggle.com/sudalairajkumar/covid19-in-usa?select=us_states_covid19_daily.csv)
+>>
+endobj
+21 0 obj
+<< /Type /Annot
+/Subtype /Link
+/A 22 0 R
+/Border [0 0 0]
+/H /I
+/Rect [ 150.3317 667.7335 506.9957 679.6135 ]
+>>
+endobj
+22 0 obj
+<< /Type /Action
+/S /URI
+/URI (https://gist.github.com/ElliotGluck/64b0b814293c09999f765e265aaa2ba1)
+>>
+endobj
+23 0 obj
+<< /Type /Annot
+/Subtype /Link
+/A 24 0 R
+/Border [0 0 0]
+/H /I
+/Rect [ 193.6397 580.4219 451.6157 592.3019 ]
+>>
+endobj
+24 0 obj
+<< /Type /Action
+/S /URI
+/URI (https://www.kaggle.com/sudalairajkumar/covid19-in-usa?select=us_states_covid19_daily.csv)
+>>
+endobj
+25 0 obj
+<< /Type /Annot
+/Subtype /Link
+/A 26 0 R
+/Border [0 0 0]
+/H /I
+/Rect [ 34.0157 566.1659 226.4237 578.0459 ]
+>>
+endobj
+26 0 obj
+<< /Type /Action
+/S /URI
+/URI (https://www.kaggle.com/sudalairajkumar/covid19-in-usa?select=us_states_covid19_daily.csv)
+>>
+endobj
+27 0 obj
+<< /Type /Annot
+/Subtype /Link
+/A 28 0 R
+/Border [0 0 0]
+/H /I
+/Rect [ 75.6677 464.3824 196.9997 476.2624 ]
+>>
+endobj
+28 0 obj
+<< /Type /Action
+/S /URI
+/URI (https://www.kaggle.com/)
+>>
+endobj
+29 0 obj
+<< /Type /Annot
+/Subtype /Link
+/A 30 0 R
+/Border [0 0 0]
+/H /I
+/Rect [ 171.3317 450.1264 429.3077 462.0064 ]
+>>
+endobj
+30 0 obj
+<< /Type /Action
+/S /URI
+/URI (https://www.kaggle.com/sudalairajkumar/covid19-in-usa?select=us_states_covid19_daily.csv)
+>>
+endobj
+31 0 obj
+<< /Type /Annot
+/Subtype /Link
+/A 32 0 R
+/Border [0 0 0]
+/H /I
+/Rect [ 34.0157 435.8704 226.4237 447.7504 ]
+>>
+endobj
+32 0 obj
+<< /Type /Action
+/S /URI
+/URI (https://www.kaggle.com/sudalairajkumar/covid19-in-usa?select=us_states_covid19_daily.csv)
+>>
+endobj
+33 0 obj
+<< /Type /Page
+/Parent 3 0 R
+/Contents 34 0 R
+>>
+endobj
+34 0 obj
+<<
+/Length 7029 >>
+stream
+
+0.000 0.000 0.000 rg
+0.000 0.000 0.800 RG
+0.6 w 0 J [  ] 0 d
+BT 34.016 797.914 Td /F3 12.0 Tf  [(    negatives <- rbinom\(1, pop, 1-prev\))] TJ ET
+BT 34.016 785.464 Td /F3 12.0 Tf  [(    positives <- pop - negatives)] TJ ET
+BT 34.016 773.014 Td /F3 12.0 Tf  [(  })] TJ ET
+BT 34.016 760.563 Td /F3 12.0 Tf  [(  return\(c\(rep\(1, negatives\), rep\(0, positives\)\)\))] TJ ET
+BT 34.016 748.113 Td /F3 12.0 Tf  [(  #return vector with positive cases having values of 0, negatives with 1)] TJ ET
+BT 34.016 735.663 Td /F3 12.0 Tf  [(})] TJ ET
+BT 34.016 709.173 Td /F3 12.0 Tf  [(The population function is to create a vector with the size of the total amount of people who were tested in that day and state, or with a size depending on the prevalence rate and population size indicated. Each person is assigned a value of 1 if they were tested negative and a value of 0 if they were tested positive.)] TJ ET
+BT 34.016 696.722 Td /F3 12.0 Tf  [(```r)] TJ ET
+BT 34.016 684.272 Td /F3 12.0 Tf  [(pooled_test <- function\(sample=c\(\), se=0, sp=0, size = 2\) {)] TJ ET
+BT 34.016 671.822 Td /F3 12.0 Tf  [(    #' Returns test result status for a particular pooled group)] TJ ET
+BT 34.016 659.372 Td /F3 12.0 Tf  [(    #' @param sample vector, default length size numeric type)] TJ ET
+BT 34.016 646.921 Td /F3 12.0 Tf  [(    #' @param se numeric, default value 0)] TJ ET
+BT 34.016 634.471 Td /F3 12.0 Tf  [(    #' @param sp numeric, default value 0)] TJ ET
+BT 34.016 622.021 Td /F3 12.0 Tf  [(    #' @param size numeric, default value 2)] TJ ET
+BT 34.016 609.571 Td /F3 12.0 Tf  [(    #' @return value 1 or value size + 1 depending on sample and se + sp.)] TJ ET
+BT 34.016 597.120 Td /F3 12.0 Tf  [(    pool <- prod\(sample\) #simulate pooling everyone into one sample)] TJ ET
+BT 34.016 584.670 Td /F3 12.0 Tf  [(    if \(pool == 1\) { #if everyone within the test are truly negative)] TJ ET
+BT 34.016 572.220 Td /F3 12.0 Tf  [(      test_prob <- runif\(1,0,1\))] TJ ET
+BT 34.016 559.770 Td /F3 12.0 Tf  [(      if \(test_prob < sp\) {return\(1\)} #true negative pooled result)] TJ ET
+BT 34.016 547.319 Td /F3 12.0 Tf  [(      else {return\(size + 1\)} #false positive result)] TJ ET
+BT 34.016 534.869 Td /F3 12.0 Tf  [(    })] TJ ET
+BT 34.016 522.419 Td /F3 12.0 Tf  [(    else {# if there exists at least one person that truly has COVID)] TJ ET
+BT 34.016 509.969 Td /F3 12.0 Tf  [(      test_prob <- runif\(1,0,1\))] TJ ET
+BT 34.016 497.519 Td /F3 12.0 Tf  [(      if \(test_prob < se\) {return\(size + 1\)} #true positive pooled result)] TJ ET
+BT 34.016 485.068 Td /F3 12.0 Tf  [(      else {return\(1\)} #false negative pooled result)] TJ ET
+BT 34.016 472.618 Td /F3 12.0 Tf  [(    })] TJ ET
+BT 34.016 460.168 Td /F3 12.0 Tf  [(  })] TJ ET
+BT 34.016 432.233 Td /F2 12.0 Tf  [(The pooled_test function is to simulate a test for a group's pooled sample. To simulate the idea of pooling )] TJ ET
+BT 34.016 417.977 Td /F2 12.0 Tf  [(everything into one sample, all the values within the sample group vector have been multiplied together. If )] TJ ET
+BT 34.016 403.721 Td /F2 12.0 Tf  [(the resulting product is 1, then everyone in the group is a true negative. Otherwise, there exists at least one )] TJ ET
+BT 34.016 389.465 Td /F2 12.0 Tf  [(true positive in the group. Afterwards, a random number between 0 and 1 is sampled, and it is compared to )] TJ ET
+BT 34.016 375.209 Td /F2 12.0 Tf  [(the sensitivity or specificity level depending on if the product value is 0 or 1. From the if statements, either 1 )] TJ ET
+BT 34.016 360.953 Td /F2 12.0 Tf  [(or size + 1 is returned. ```r pooled_sample <- function\(df=df,date=date, state=state, prev = 0.01, pop = )] TJ ET
+BT 34.016 346.697 Td /F2 12.0 Tf  [(10000, se=0,sp=0, size=2\) { #' Returns the total number of tests needed in a random simulation of the pooled-)] TJ ET
+BT 34.016 332.441 Td /F2 12.0 Tf  [(sample test model #' @param df dataframe, default dataframe with unspecified dimensions #' @param date )] TJ ET
+BT 34.016 318.185 Td /F2 12.0 Tf  [(vector, default length 1 numeric type #' @param state vector, default length 1 character type #' @param prev )] TJ ET
+BT 34.016 303.929 Td /F2 12.0 Tf  [(numeric, default length 1 numeric type #' @param pop numeric, default length 1 numeric type #' @param se )] TJ ET
+BT 34.016 289.673 Td /F2 12.0 Tf  [(numeric, default value 0 #' @param sp numeric, default value 0 #' @param size numeric, default value 2 #' )] TJ ET
+BT 34.016 275.417 Td /F2 12.0 Tf  [(@return numeric value of at least 1)] TJ ET
+BT 34.016 248.566 Td /F3 12.0 Tf  [(  # make our population vector)] TJ ET
+BT 34.016 236.115 Td /F3 12.0 Tf  [(  pop <- population\(df = df, state = state, date = date, prev = prev, pop = pop\))] TJ ET
+BT 34.016 223.665 Td /F3 12.0 Tf  [(  #initialize our test counter)] TJ ET
+BT 34.016 211.215 Td /F3 12.0 Tf  [(  total_tests <- 0)] TJ ET
+BT 34.016 198.765 Td /F3 12.0 Tf  [(  for \(i in 1:ceiling\(length\(pop\)/size\)\) {#iterate for the amount of groups possible)] TJ ET
+BT 34.016 186.314 Td /F3 12.0 Tf  [(    #gather indices for randomly selecting a group with "size" amount of people)] TJ ET
+BT 34.016 173.864 Td /F3 12.0 Tf  [(    sample_indices <- sample\(x = 1:length\(pop\), size = min\(size,length\(pop\)\), replace = FALSE\))] TJ ET
+BT 34.016 161.414 Td /F3 12.0 Tf  [(    #run the pooled_test function with the newly created group, append the value to our counter)] TJ ET
+BT 34.016 148.964 Td /F3 12.0 Tf  [(    total_tests <- total_tests + pooled_test\(pop[sample_indices], se, sp, size\))] TJ ET
+BT 34.016 136.513 Td /F3 12.0 Tf  [(    #update our population by removing the pooled samples using sample_indices)] TJ ET
+BT 34.016 124.063 Td /F3 12.0 Tf  [(    pop <- pop[-sample_indices])] TJ ET
+BT 34.016 111.613 Td /F3 12.0 Tf  [(  })] TJ ET
+BT 34.016 99.163 Td /F3 12.0 Tf  [(  return\(total_tests\))] TJ ET
+BT 34.016 86.712 Td /F3 12.0 Tf  [(})] TJ ET
+BT 34.016 60.222 Td /F3 12.0 Tf  [(This function either simulates an entire test run for the entire day, or simulates data generated from using the prevalence rate and population size indicated. First, the population function is used to grab the population for that state and day, or to create data depending on the prevalence and population parameters. Then a test counter is initialized. We then create a for loop that iterates for the amount of groups that can be created from our population vector \(dictated by the size parameter\). A group with length \(size\) is sampled without replacement, and this group goes through the pooled_test function to spit out a test value. This is then added to our test counter variable. The function returns the total test counter value after the for loop is over.)] TJ ET
+BT 34.016 47.772 Td /F3 12.0 Tf  [(Due to the sensitivity and specificity parameters, the results of this model is inherently random. This is why we have opted to run this model multiple times and display a histogram, to give a sense of the "distribution" of test results for each group size.)] TJ ET
+BT 34.016 35.322 Td /F3 12.0 Tf  [(```r)] TJ ET
+endstream
+endobj
+35 0 obj
+<< /Type /Page
+/Parent 3 0 R
+/Contents 36 0 R
+>>
+endobj
+36 0 obj
+<<
+/Length 5765 >>
+stream
+
+0.000 0.000 0.000 rg
+0.000 0.000 0.800 RG
+0.6 w 0 J [  ] 0 d
+BT 34.016 797.914 Td /F3 12.0 Tf  [(binary_search <-function\(df=df,date=date, state=state, prev=0.01, pop=10000,)] TJ ET
+BT 34.016 785.464 Td /F3 12.0 Tf  [(                           se=0, sp=0\) {)] TJ ET
+BT 34.016 773.014 Td /F3 12.0 Tf  [(    #' Returns the estimated group size value that gives the lowest average tests conducted)] TJ ET
+BT 34.016 760.563 Td /F3 12.0 Tf  [(    #' @param df dataframe, default dataframe with unspecified dimensions)] TJ ET
+BT 34.016 748.113 Td /F3 12.0 Tf  [(    #' @param date vector, default length 1 numeric type)] TJ ET
+BT 34.016 735.663 Td /F3 12.0 Tf  [(    #' @param state vector, default length 1 character type)] TJ ET
+BT 34.016 723.213 Td /F3 12.0 Tf  [(    #' @param prev numeric, default length 1 numeric type)] TJ ET
+BT 34.016 710.762 Td /F3 12.0 Tf  [(    #' @param pop numeric, default length 1 numeric type)] TJ ET
+BT 34.016 698.312 Td /F3 12.0 Tf  [(    #' @param se numeric, default value 0)] TJ ET
+BT 34.016 685.862 Td /F3 12.0 Tf  [(    #' @param sp numeric, default value 0)] TJ ET
+BT 34.016 673.412 Td /F3 12.0 Tf  [(    #' @return numeric value of at least 2)] TJ ET
+BT 34.016 660.961 Td /F3 12.0 Tf  [(    #min group size possible is 2)] TJ ET
+BT 34.016 648.511 Td /F3 12.0 Tf  [(    min_k <- 2)] TJ ET
+BT 34.016 636.061 Td /F3 12.0 Tf  [(    #max group size bound the total population *3/4 rounded up)] TJ ET
+BT 34.016 623.611 Td /F3 12.0 Tf  [(    #max group size possible would only have 2 possible values: 1 and population + 1)] TJ ET
+BT 34.016 611.160 Td /F3 12.0 Tf  [(    #These 2 extremes would skew the average due to sensitivity and specificity parameters)] TJ ET
+BT 34.016 598.710 Td /F3 12.0 Tf  [(    #Thus we pick a bound 3/4th of the total population for a better prediction)] TJ ET
+BT 34.016 586.260 Td /F3 12.0 Tf  [(    if \(input$rd == 1\) {)] TJ ET
+BT 34.016 573.810 Td /F3 12.0 Tf  [(      max_k <- ceiling\(df$totalTestResults[df$date == date & df$state == state]*3/4\))] TJ ET
+BT 34.016 561.359 Td /F3 12.0 Tf  [(    })] TJ ET
+BT 34.016 548.909 Td /F3 12.0 Tf  [(    else {)] TJ ET
+BT 34.016 536.459 Td /F3 12.0 Tf  [(      max_k <- ceiling\(pop*3/4\))] TJ ET
+BT 34.016 524.009 Td /F3 12.0 Tf  [(    })] TJ ET
+BT 34.016 511.559 Td /F3 12.0 Tf  [(    #find empirical average of tests needed for max group size to compare with later)] TJ ET
+BT 34.016 499.108 Td /F3 12.0 Tf  [(    test_results <- mean\(sapply\(1:100, function\(x\) {)] TJ ET
+BT 34.016 486.658 Td /F3 12.0 Tf  [(      pooled_sample\(df=df, date=date, state=state, prev = prev, pop = pop,)] TJ ET
+BT 34.016 474.208 Td /F3 12.0 Tf  [(                    se=se, sp=sp, size = max_k\))] TJ ET
+BT 34.016 461.758 Td /F3 12.0 Tf  [(    }\)\))] TJ ET
+BT 34.016 449.307 Td /F3 12.0 Tf  [(    #while loop when there is more than 1 number in our search range)] TJ ET
+BT 34.016 436.857 Td /F3 12.0 Tf  [(    while \(max_k - min_k > 1\) {)] TJ ET
+BT 34.016 424.407 Td /F3 12.0 Tf  [(      #grab a number in the middle of the search range)] TJ ET
+BT 34.016 411.957 Td /F3 12.0 Tf  [(      new_k <- ceiling\(\(max_k+min_k\)/2\))] TJ ET
+BT 34.016 399.506 Td /F3 12.0 Tf  [(      #get an empirical average of tests under new k group)] TJ ET
+BT 34.016 387.056 Td /F3 12.0 Tf  [(      new_results <- mean\(sapply\(1:100, function\(x\) {)] TJ ET
+BT 34.016 374.606 Td /F3 12.0 Tf  [(        pooled_sample\(df=df, date=date, state=state, prev = prev, pop = pop,)] TJ ET
+BT 34.016 362.156 Td /F3 12.0 Tf  [(                      se=se, sp=sp, size = new_k\))] TJ ET
+BT 34.016 349.705 Td /F3 12.0 Tf  [(      }\)\))] TJ ET
+BT 34.016 337.255 Td /F3 12.0 Tf  [(      #if this new average is greater than \(or equal to\) the test results)] TJ ET
+BT 34.016 324.805 Td /F3 12.0 Tf  [(      if \(new_results >= test_results\) {)] TJ ET
+BT 34.016 312.355 Td /F3 12.0 Tf  [(        #minimum is to the right. Change left bound for next iteration)] TJ ET
+BT 34.016 299.904 Td /F3 12.0 Tf  [(        min_k <- new_k)] TJ ET
+BT 34.016 287.454 Td /F3 12.0 Tf  [(      })] TJ ET
+BT 34.016 275.004 Td /F3 12.0 Tf  [(      #if new average is less than the test results)] TJ ET
+BT 34.016 262.554 Td /F3 12.0 Tf  [(      else {)] TJ ET
+BT 34.016 250.103 Td /F3 12.0 Tf  [(        #minimum is to the left. Change right bound for next iteration.)] TJ ET
+BT 34.016 237.653 Td /F3 12.0 Tf  [(        max_k <- new_k)] TJ ET
+BT 34.016 225.203 Td /F3 12.0 Tf  [(        #update test_results with new_results as the new value to be compared to)] TJ ET
+BT 34.016 212.753 Td /F3 12.0 Tf  [(        test_results <- new_results)] TJ ET
+BT 34.016 200.303 Td /F3 12.0 Tf  [(      })] TJ ET
+BT 34.016 187.852 Td /F3 12.0 Tf  [(    })] TJ ET
+BT 34.016 175.402 Td /F3 12.0 Tf  [(    return\(ceiling\(\(max_k+min_k\)/2\)\)#return median rounded up)] TJ ET
+BT 34.016 162.952 Td /F3 12.0 Tf  [(  })] TJ ET
+BT 34.016 135.017 Td /F2 12.0 Tf  [(This function tries to estimate the group size value that gives the lowest average tests conducted through an )] TJ ET
+BT 34.016 120.761 Td /F2 12.0 Tf  [(improvised version of binary search. First, the upper and lower bounds of where the minimum group size )] TJ ET
+BT 34.016 106.505 Td /F2 12.0 Tf  [(value can be found is defined. The lower bound will always be 2 since a group needs to be at least size 2, or )] TJ ET
+BT 34.016 92.249 Td /F2 12.0 Tf  [(else we wouldn't be doing a pooled sample test. The upper bound is 3/4th of the total population size, )] TJ ET
+BT 34.016 77.993 Td /F2 12.0 Tf  [(rounded up. The reason being is that if the group size is too high, then the average would be skewed due to )] TJ ET
+BT 34.016 63.737 Td /F2 12.0 Tf  [(the limited extreme values that are possible. For example, if we do a group with the max population size, the )] TJ ET
+endstream
+endobj
+37 0 obj
+<< /Type /Page
+/Parent 3 0 R
+/Contents 38 0 R
+>>
+endobj
+38 0 obj
+<<
+/Length 3689 >>
+stream
+
+0.000 0.000 0.000 rg
+0.000 0.000 0.800 RG
+0.6 w 0 J [  ] 0 d
+BT 34.016 796.469 Td /F2 12.0 Tf  [(only 2 outcomes are 1 and size + 1, and the variability in simulations could result in a average that is among )] TJ ET
+BT 34.016 782.213 Td /F2 12.0 Tf  [(the lowest available. This would then give incorrect judgements for the binary search in the future, resulting )] TJ ET
+BT 34.016 767.957 Td /F2 12.0 Tf  [(in wrong results. Thus, we limit the upper bound and set it to 3/4 of the total population rounded up.)] TJ ET
+BT 34.016 739.661 Td /F2 12.0 Tf  [(After determining our bounds, we then calculate the average amount of test results for one end \(which would )] TJ ET
+BT 34.016 725.405 Td /F2 12.0 Tf  [(be running our pooled_sample function a hundred times and averaging the number\). Because trying to )] TJ ET
+BT 34.016 711.149 Td /F2 12.0 Tf  [(calculate the average with group size 2 is infeasible for high population sizes \(potentially resulting in )] TJ ET
+BT 34.016 696.893 Td /F2 12.0 Tf  [(millions or maybe billions of iterations\), we opt with calculating the average for the upper bound. A while )] TJ ET
+BT 34.016 682.637 Td /F2 12.0 Tf  [(loop is then conducted under the condition that the difference between the 2 bounds is greater than 1. The )] TJ ET
+BT 34.016 668.381 Td /F2 12.0 Tf  [(average test results of the median value rounded up is compared to the average test results of the upper )] TJ ET
+BT 34.016 654.125 Td /F2 12.0 Tf  [(bound within each iteration. If the results of the median is greater than our equal to the results of the upper )] TJ ET
+BT 34.016 639.869 Td /F2 12.0 Tf  [(bound, then this suggests that the group size value which gives the minimum average is to the right of the )] TJ ET
+BT 34.016 625.613 Td /F2 12.0 Tf  [(median. We thus change our lower bound to be this median value and move on to the next iteration. If the )] TJ ET
+BT 34.016 611.357 Td /F2 12.0 Tf  [(results of the median is less than the results of the upper bound, this suggests that the group size value which )] TJ ET
+BT 34.016 597.101 Td /F2 12.0 Tf  [(gives the minimum value is to the left of the median. We thus change our upper bound to this median, and )] TJ ET
+BT 34.016 582.845 Td /F2 12.0 Tf  [(use the median's average test results for future comparison. We then move on to the next iteration.)] TJ ET
+BT 34.016 554.549 Td /F2 12.0 Tf  [(Because of the randomness of the pooled test model, this function is also inherently random, since there is )] TJ ET
+BT 34.016 540.293 Td /F2 12.0 Tf  [(no way to feasibly calculate the minimum average test results when the potential group sizes become large )] TJ ET
+BT 34.016 526.037 Td /F2 12.0 Tf  [(\(and thus use the proper binary search function by comparing the absolute minimum value\). Thus, in an )] TJ ET
+BT 34.016 511.781 Td /F2 12.0 Tf  [(attempt to circumvent this, we have also tried running this function multiple times to find the distribution of )] TJ ET
+BT 34.016 497.525 Td /F2 12.0 Tf  [(estimated group sizes that give the minimum average test results \(this time 300 runs of pooled_sample since )] TJ ET
+BT 34.016 483.269 Td /F2 12.0 Tf  [(we have less things to check, so we want a more stable average\), and then picking the test result that gives )] TJ ET
+BT 34.016 469.013 Td /F2 12.0 Tf  [(the lowest average. If the user has specified in using simulations with a prevalence parameter, a formula \(to )] TJ ET
+BT 34.016 454.757 Td /F2 12.0 Tf  [(calculate the optimal group size\) from the article we based our model off on is stated for a comparison )] TJ ET
+BT 34.016 440.501 Td /F2 12.0 Tf  [(between the estimated optimal group size versus the article's optimal group size.)] TJ ET
+endstream
+endobj
+xref
+0 39
+0000000000 65535 f 
+0000000009 00000 n 
+0000000074 00000 n 
+0000000120 00000 n 
+0000000323 00000 n 
+0000000352 00000 n 
+0000000466 00000 n 
+0000000555 00000 n 
+0000006742 00000 n 
+0000006850 00000 n 
+0000006959 00000 n 
+0000007086 00000 n 
+0000007197 00000 n 
+0000007324 00000 n 
+0000007458 00000 n 
+0000007591 00000 n 
+0000014422 00000 n 
+0000014528 00000 n 
+0000014656 00000 n 
+0000014790 00000 n 
+0000014917 00000 n 
+0000015057 00000 n 
+0000015185 00000 n 
+0000015305 00000 n 
+0000015433 00000 n 
+0000015573 00000 n 
+0000015700 00000 n 
+0000015840 00000 n 
+0000015967 00000 n 
+0000016042 00000 n 
+0000016170 00000 n 
+0000016310 00000 n 
+0000016437 00000 n 
+0000016577 00000 n 
+0000016642 00000 n 
+0000023724 00000 n 
+0000023789 00000 n 
+0000029607 00000 n 
+0000029672 00000 n 
+trailer
+<<
+/Size 39
+/Root 1 0 R
+/Info 5 0 R
+>>
+startxref
+33414
+%%EOF
