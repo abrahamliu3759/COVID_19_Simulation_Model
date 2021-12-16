@@ -267,7 +267,7 @@ server <- function(input, output) {
   
   output$downloadCsv <- downloadHandler(
     filename = function() {
-      paste("COVID_Data_", cv_today$date[1], ".csv", sep="")
+      paste("Covid_Data", ".csv", sep="")
     },
     
     content = function(file) {
